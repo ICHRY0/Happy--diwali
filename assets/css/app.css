@@ -1,0 +1,128 @@
+@font-face {
+	font-family: diwaliWishFont;
+	src: url('fonts/JosefinSans-VariableFont_wght.ttf');
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body > .page-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	z-index: -1;
+	background-color: #0a0a0a;
+}
+
+.page-content{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(10, 10, 10, 0.4);
+	color: #fff;
+	padding: 2rem;
+}
+
+.page-footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 2rem;
+	color: #fff;
+}
+
+.page-footer p {
+	margin: 0 !important;
+}
+
+.page-footer a {
+	color: #ecd600;
+}
+
+.page-footer a:hover {
+	color: #ffe700;
+	text-decoration: underline;
+}
+
+.floating-buttons {
+	position: fixed;
+	bottom: 1rem;
+	right: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.floating-buttons .button {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+.floating-buttons .button:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.columns {
+	width: 100%;
+}
+
+.diwali-wish {
+	font-family: diwaliWishFont;
+}
+
+#wishingFriend #wishingFriend-name {
+	color: #ecd600 !important;
+	text-decoration: underline;
+}
+
+#wishingFriend .wishing-friend-giftbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	z-index: 2;
+}
+
+.button-rounded-border {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4rem;
+}
+
+body.capturing-screen *.hide-when-capture {
+	display: none !important;
+}
+
+#capturedImageContainer {
+	display: none;
+}
